@@ -30,9 +30,9 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">Bäumli Saal</h1>
+        <h1 class="header center">Bäumli Saal</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Ein lichtdurchfluteten Saal an wunderschöner Lage am Südhang von Winterthur</h5>
+          <h4 class="header col s12 light" style="position:relative; top:420px;">Ein lichtdurchfluteten Saal<br> an wunderschöner Lage am Südhang von Winterthur</h4>
         </div>
         <!--<div class="row center">
           <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
@@ -47,51 +47,96 @@
 
   <div class="container">
     <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="spacer"></div>
+                <img class="responsive-img" src="img/saal-tag-cloud.png" alt="Nutzungsformen">
+                <div class="spacer"></div>
+                <h4 class="center">Ausstattung</h4>
+        
+                <p class="light">Der Bäumli-Saal ist mit einem Parkett-Tanzboden, einem Steinway-Flügel und Sonnenterrasse  ausgestattet. Es stehen zwei Toiletten, eine Dusche und eine kleine Teeküche zur Verfügung.</p>
+                <br>
+                <br>
+                <div class="row center">
+                    <a href="nutzungsbedingungen-baumli-saal.pdf" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Nutzungsbedingungen</a>
+                </div>
+            </div>
         </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
+                <div class="row">
+                    <div class="col s12 center">
+                        <h4 class="center">Lage</h4>
+                        <p class="light">
+                        Rychenbergstrasse 179, 8400 Winterthur<br>
+                        Mit ÖV leicht zu erreichen (Bus Nr. 10 bis Bäumliweg, 8 Minuten ab Bahnhof Winterthur).
+                        </p>
+                        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                            <div style='overflow:hidden;height:320px;width:100%;'>
+                            <div id='gmap_canvas' style='height:320px;width:100%;'></div>
+                            <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+                            </div>
+                            <script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(47.502541,8.744413699999996),mapTypeId: google.maps.MapTypeId.HYBRID};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(47.502541,8.744413699999996)});infowindow = new google.maps.InfoWindow({content:'<strong>Bäumli-Saal</strong><br>Rychenbergstrasse 179, 8400 Winterthur<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    
+                        <h3 class="center">Preise</h3>
+                        <div class="col s12 m5">
+                            <h4>Regelmässige Mieter</h4>
+                            <table class="striped">
+                                <!--<thead>
+                                    <tr>
+                                        <th data-field="id">Name</th>
+                                        <th data-field="name">Item Name</th>
+                                        <th data-field="price">Item Price</th>
+                                    </tr>
+                                </thead>-->
+                                
+                                <tbody>
+                                    <tr>
+                                        <td>Stunde</td>
+                                        <td width="100px">12 CHF</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vormittag (7-12 Uhr), Nachmittag (12-17 Uhr) oder Abend (17-22 Uhr)</td>
+                                        <td>40 CHF</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ganzer Tag</td>
+                                        <td>100 CHF</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                                
+                        </div>
+                        <div class="col s12 m1">&nbsp;</div>
+                        
+                        <div class="col s12 m5">
+                            <h4>Seminare und Publikumsanlässe</h4>
+                            
+                            <table class="striped">
+                                <tbody>
+                                    <tr>
+                                        <td>Abend</td>
+                                        <td width="100px">120 CHF</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tag</td>
+                                        <td>200 CHF</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zwei aufeinanderfolgende Tage</td>
+                                        <td>300 CHF</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
-  </div>
 
   <div class="container">
     <div class="section">
@@ -99,7 +144,7 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Kontaktiere Uns</h4>
+          <h4>Reserviere den Saal jetzt bei</h4>
           <p class="center-align light">Angelika Ortner<br>
           Rychenbergstrasse 179<br>
           8400 Winterthur<br>
@@ -111,50 +156,10 @@
     </div>
   </div>
 
-
-  <!--<div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
-  </div>-->
-
   <footer class="page-footer teal">
-      <!--<div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>-->
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Vermietet durch den Verein Bäumli-Gemeinschaft</a>
       </div>
     </div>
   </footer>
