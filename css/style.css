@@ -15,6 +15,10 @@ body {
     color: #333;
 }
 
+h1, h2, h3, h4, h5 {
+    color: #555;
+}
+
 p {
   line-height: 3rem;
   font-size: 1.5rem;
@@ -63,4 +67,13 @@ footer.page-footer {
 
 .spacer {
     height:80px;
+}
+
+.spacer-colored {
+    height:120px;
+    background-color:#8a97cc;
+}
+
+.page-footer {
+    background-color:#8a97cc !important;
 }
