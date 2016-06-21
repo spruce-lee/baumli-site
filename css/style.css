@@ -19,6 +19,13 @@ h1, h2, h3, h4, h5 {
     color: #555;
 }
 
+h1, .header  {
+    color:#333 !important;
+}
+h4, .header  {
+    color:#333 !important;
+}
+
 p {
   line-height: 3rem;
   font-size: 1.5rem;
@@ -74,6 +81,6 @@ footer.page-footer {
     background-color:#8a97cc;
 }
 
-.page-footer {
+.footer-copyright,  .page-footer {
     background-color:#8a97cc !important;
 }
